@@ -138,5 +138,8 @@ document.getElementById("demo").innerHTML="My First JavaScript Function";
 
 在 `<head>` 或 `<body>` 中引用脚本文件都是可以的。实际运行效果与您在 `<script>`标签中编写脚本完全一致
 
+**提示**：外部脚本不能包含 `<script>` 标签。
+
+
 
 
