@@ -71,3 +71,30 @@ document.write("<p>This is a paragraph</p>");
 ```
 JavaScript能够改变任意`HTML`元素的大多数属性，而不仅仅是图片。
 
+
+#### JavaScript:改变HTML样式
+
+改变`HTML`元素的样式，属于改变`HTML`属性的变种 
+```javascript
+x=document.getElementById("demo")  //找到元素
+x.style.color="#ff0000";           //改变样式
+```
+
+#### JavaScript：验证输入
+
+JavaScript常用于验证用户的输入
+
+**实例**
+```javascript
+if isNaN(x) {alert("Not Numeric")};
+```
+
+### 知道吗？
+
+**提示**：JavaScript 与 Java 是两种完全不同的语言，无论在概念还是设计上。
+
+Java（由 Sun 发明）是更复杂的编程语言。
+
+ECMA-262 是 JavaScript 标准的官方名称。
+
+JavaScript 由 Brendan Eich 发明。它于 1995 年出现在 Netscape 中（该浏览器已停止更新），并于 1997 年被 ECMA（一个标准协会）采纳。
