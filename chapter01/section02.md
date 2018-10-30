@@ -52,6 +52,8 @@ document.write("<p>This is a paragraph</p>");
 
 #### JavaScript:改变HTML图像
 
+**实例**
+动态地改变`HTML<image>`的来源`src`
 ```html
 		<script type="text/javascript">
 			function changeImage(){
@@ -67,5 +69,5 @@ document.write("<p>This is a paragraph</p>");
 		<img src="img/eg_bulboff.gif" alt="" id="myimage" onclick="changeImage()"/>
 		<p>点击灯泡来点亮或熄灭这盏灯</p>
 ```
-
+JavaScript能够改变任意`HTML`元素的大多数属性，而不仅仅是图片。
 
