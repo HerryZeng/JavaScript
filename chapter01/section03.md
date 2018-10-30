@@ -66,7 +66,30 @@ document.write("<p>This is a paragraph</p>");
 在本例中，我们把一个 JavaScript 函数放置到 `HTML`页面的 `<head>` 部分。
 
 该函数会在点击按钮时被调用：
+```html
+<!DOCTYPE html>
+<html>
 
+<head>
+<script>
+function myFunction()
+{
+document.getElementById("demo").innerHTML="My First JavaScript Function";
+}
+</script>
+</head>
+
+<body>
+
+<h1>My Web Page</h1>
+
+<p id="demo">A Paragraph</p>
+
+<button type="button" onclick="myFunction()">Try it</button>
+
+</body>
+</html>
+```
 
 
 
