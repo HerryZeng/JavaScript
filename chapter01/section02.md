@@ -35,3 +35,17 @@ document.write("<p>This is a paragraph</p>");
 
 #### JavaScript:改变HTML内容
 
+使用JavaScript来处理`HTML`内容是非常强大的功能。
+
+**实例**
+```html
+<p id="demo">JavaScript能改变HTML元素的内容</p>
+<script>
+    function myFunction() {
+    x = document.getElementById("demo") //找到元素
+    x.innerHTML = "Hello JavaScript!" //改变内容 
+    }
+</script>
+<button type="button" onclick="myFunction()">占击这里</button>
+```
+
