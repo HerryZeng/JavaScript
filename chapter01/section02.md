@@ -22,3 +22,16 @@ JavaScript很容易学习。
 document.write("<h1>This is a heading</h1>");
 document.write("<p>This is a paragraph</p>");
 ```
+提示：只能在`HTML`输出中使用`document.write`，如果在文档加载后使用方法，会覆盖整个文档。
+
+#### JavaScript:对事件作出反应
+
+**实例**
+```html
+<button type="button" onclick="alert('Welcome!')">占击这里</button>
+```
+`alert()`函数在JavaScript中并不常用，但它对于代码测试非常方便。
+`onclick`事件只是在本教程中学到的众多事件之一。
+
+#### JavaScript:改变HTML内容
+
