@@ -119,6 +119,23 @@ document.getElementById("demo").innerHTML="My First JavaScript Function";
 </html>
 ```
 
+---
+
+### 外部的 JavaScript
+也可以把脚本保存到外部文件中。外部文件通常包含被多个网页使用的代码。
+
+外部 JavaScript 文件的文件扩展名是 .js。
+
+如需使用外部文件，请在 `<script>`标签的 "`src`" 属性中设置该 `.js` 文件：
+```html
+<!DOCTYPE html>
+<html>
+<body>
+<script src="myScript.js"></script>
+</body>
+</html>
+```
+
 
 
 
