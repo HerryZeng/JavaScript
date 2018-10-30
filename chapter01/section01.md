@@ -15,5 +15,20 @@ JavaScript很容易使用，你一定会喜欢它的。
 
 [HTML DOM实例]()
 
+## JavaScript测试
+
+
+## JavaScript参考手册
+
+[完整的JavaScript对象参考手册]()
+
+[完整的HTML DOM对象参考手册]()
+
+## JavaScript课外书
+
+如果已把JavaScript教程学习完毕，并且需要更深入地学习这门语言，可以选择[JavaScript高级教程]()。
+
+
+
 
 
