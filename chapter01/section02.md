@@ -48,4 +48,24 @@ document.write("<p>This is a paragraph</p>");
 </script>
 <button type="button" onclick="myFunction()">占击这里</button>
 ```
+经学会看到`document.getElementByID("some id")`。这个方法是`HTML DOM`中定义的。`DOM`(该当对象模型)是用以访问`HTML`元素的正式W3C标准。
+
+#### JavaScript:改变HTML图像
+
+```html
+		<script type="text/javascript">
+			function changeImage(){
+				el = document.getElementById("myimage")
+				if (el.src.match("bulbon")){
+					el.src='img/eg_bulboff.gif'
+				}
+				else {
+					el.src='img/eg_bulbon.gif'
+				}
+			}
+		</script>	
+		<img src="img/eg_bulboff.gif" alt="" id="myimage" onclick="changeImage()"/>
+		<p>点击灯泡来点亮或熄灭这盏灯</p>
+```
+
 
