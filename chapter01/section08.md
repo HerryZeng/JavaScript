@@ -97,3 +97,26 @@ id        :  5566
 name=person.lastname;
 name=person["lastname"];
 ```
+
+---
+
+### Undefined 和 Null
+Undefined 这个值表示变量不含有值。
+可以通过将变量的值设置为 null 来清空变量。
+```javascript
+cars=null;
+person=null;
+```
+
+---
+
+### 声明变量类型
+当您声明新变量时，可以使用关键词 "new" 来声明其类型：
+```javascript
+var carname=new String;
+var x=      new Number;
+var y=      new Boolean;
+var cars=   new Array;
+var person= new Object;
+```
+JavaScript 变量均为对象。当您声明一个变量时，就创建了一个新的对象。
