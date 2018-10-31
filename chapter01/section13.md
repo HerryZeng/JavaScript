@@ -26,3 +26,90 @@ if (条件)
   只有当条件为 true 时执行的代码
   }
 ```
+**注意**：请使用小写的 if。使用大写字母（IF）会生成 JavaScript 错误！
+
+实例
+当事件小于 20:00 时，生成一个“Good day”问候：
+```javascript
+if (time<20)
+  {
+  x="Good day";
+  }
+```
+x 的结果是：
+```javascript
+Good day
+```
+---
+
+### If...else 语句
+请使用 if....else 语句在条件为 true 时执行代码，在条件为 false 时执行其他代码。
+
+语法
+```javascript
+if (条件)
+  {
+  当条件为 true 时执行的代码
+  }
+else
+  {
+  当条件不为 true 时执行的代码
+  }
+```
+实例
+当时间小于 20:00 时，将得到问候 "Good day"，否则将得到问候 "Good evening"。
+```javascript
+if (time<20)
+  {
+  x="Good day";
+  }
+else
+  {
+  x="Good evening";
+  }
+```
+x 的结果是：
+```javascript
+Good day
+```
+
+---
+
+### If...else if...else 语句
+使用 if....else if...else 语句来选择多个代码块之一来执行。
+
+语法
+```javascript
+if (条件 1)
+  {
+  当条件 1 为 true 时执行的代码
+  }
+else if (条件 2)
+  {
+  当条件 2 为 true 时执行的代码
+  }
+else
+  {
+  当条件 1 和 条件 2 都不为 true 时执行的代码
+  }
+```
+实例
+如果时间小于 10:00，则将发送问候 "Good morning"，否则如果时间小于 20:00，则发送问候 "Good day"，否则发送问候 "Good evening"：
+```javascript
+if (time<10)
+  {
+  x="Good morning";
+  }
+else if (time<20)
+  {
+  x="Good day";
+  }
+else
+  {
+  x="Good evening";
+  }
+```
+x 的结果是：
+```javascript
+Good day
+```
