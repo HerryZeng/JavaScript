@@ -55,3 +55,23 @@ function myFunction(name,job){
 }
 </script>
 ```
+上面的函数会当按钮被点击时提示 "Welcome Bill Gates, the CEO"。
+
+函数很灵活，您可以使用不同的参数来调用该函数，这样就会给出不同的消息：
+```html
+<button onclick="myFunction('Harry Potter','Wizard')">点击这里</button>
+<button onclick="myFunction('Bob','Builder')">点击这里</button>
+```
+根据您点击的不同的按钮，上面的例子会提示 "Welcome Harry Potter, the Wizard" 或 "Welcome Bob, the Builder"。
+
+---
+
+### 带有返回值的函数
+有时，我们会希望函数将值返回调用它的地方。
+通过使用 `return`语句就可以实现。在使用 return 语句时，函数会停止执行，并返回指定的值。
+```javascript
+function myFunction(){
+    var x=5;
+    return x;
+}
+```
