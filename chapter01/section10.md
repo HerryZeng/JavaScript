@@ -50,9 +50,8 @@ function myFunction(var1,var2){
 <button onclick="myFunction('Bill Gates','CEO')">点击这里</button>
 
 <script>
-function myFunction(name,job)
-{
-alert("Welcome " + name + ", the " + job);
+function myFunction(name,job){
+    alert("Welcome " + name + ", the " + job);
 }
 </script>
 ```
