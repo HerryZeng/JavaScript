@@ -126,5 +126,4 @@ catch(err)
 <input id="demo" type="text">
 <button type="button" onclick="myFunction()">Test Input</button>
 <p id="mess"></p>
-
 ```
