@@ -19,3 +19,37 @@
 |<| 小于| x<8 为 true |
 |>=| 大于或等于| x>=8 为 false |
 |>= | 小于或等于| x<=8 为 true |
+
+---
+
+### 如何使用
+可以在条件语句中使用比较运算符对值进行比较，然后根据结果来采取行动：
+```javascrpt
+if (age<18) document.write("Too young");
+```
+
+---
+
+### 逻辑运算符
+逻辑运算符用于测定变量或值之间的逻辑。
+给定 `x=6` 以及 `y=3`，下表解释了逻辑运算符：
+
+|运算符| 描述| 例子 |
+|---|---|---|
+|&&|and| (x < 10 && y > 1) 为 true |
+|\|\|| or |(x==5 \|\| y==5) 为 false |
+|!| not| !(x==y) 为 true |
+
+---
+
+### 条件运算符
+JavaScript 还包含了基于某些条件对变量进行赋值的条件运算符。
+语法
+```javascript
+variablename=(condition)?value1:value2 
+```
+例子
+```javascript
+greeting=(visitor=="PRES")?"Dear President ":"Dear ";
+```
+如果变量 visitor 中的值是 "PRES"，则向变量 greeting 赋值 "Dear President "，否则赋值 "Dear"。
