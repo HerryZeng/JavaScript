@@ -117,13 +117,15 @@ return x;
 注释：整个 JavaScript 并不会停止执行，仅仅是函数。JavaScript 将继续执行代码，从调用函数的地方。
 
 函数调用将被返回值取代：
-
+```javascript
 var myVar=myFunction();
+```
 myVar 变量的值是 5，也就是函数 "myFunction()" 所返回的值。
 
 即使不把它保存为变量，您也可以使用返回值：
-
+```javascript
 document.getElementById("demo").innerHTML=myFunction();
+```
 "demo" 元素的 innerHTML 将成为 5，也就是函数 "myFunction()" 所返回的值。
 
 您可以使返回值基于传递到函数中的参数：
@@ -155,4 +157,34 @@ function myFunction(a,b){
 如果 a 大于 b，则上面的代码将退出函数，并不会计算 a 和 b 的总和。
 
 ---
+
+### 局部 JavaScript 变量
+
+在 JavaScript 函数内部声明的变量（使用 var）是局部变量，所以只能在函数内部访问它。（该变量的作用域是局部的）。
+您可以在不同的函数中使用名称相同的局部变量，因为只有声明过该变量的函数才能识别出该变量。
+只要函数运行完毕，本地变量就会被删除。
+
+---
+
+### 全局 JavaScript 变量
+
+在函数外声明的变量是全局变量，网页上的所有脚本和函数都能访问它。
+
+---
+
+### JavaScript 变量的生存期
+JavaScript 变量的生命期从它们被声明的时间开始。
+
+局部变量会在函数运行以后被删除。
+
+全局变量会在页面关闭后被删除。
+
+---
+### 向未声明的 JavaScript 变量来分配值
+如果您把值赋给尚未声明的变量，该变量将被自动作为全局变量声明。
+这条语句：
+```javascript
+carname="Volvo";
+```
+将声明一个全局变量 carname，即使它在函数内执行。
 
