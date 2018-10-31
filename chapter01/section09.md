@@ -95,4 +95,6 @@ var x=message.toUpperCase();
 HELLO WORLD!
 ```
 
+在面向对象的语言中，使用 camel-case(骆驼式命名法) 标记法的函数是很常见的。您会经常看到 someMethod() 这样的函数名，而不是 some_method()。
+
 
