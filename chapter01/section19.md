@@ -33,3 +33,94 @@ function validate_required(field,alerttxt){
     }
 }
 ```
+下面是连同 HTML 表单的代码：
+```html
+<html>
+<head>
+<script type="text/javascript">
+
+function validate_required(field,alerttxt)
+{
+with (field)
+  {
+  if (value==null||value=="")
+    {alert(alerttxt);return false}
+  else {return true}
+  }
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+  {
+  if (validate_required(email,"Email must be filled out!")==false)
+    {email.focus();return false}
+  }
+}
+</script>
+</head>
+
+<body>
+<form action="submitpage.htm" onsubmit="return validate_form(this)" method="post">
+Email: <input type="text" name="email" size="30">
+<input type="submit" value="Submit"> 
+</form>
+</body>
+
+</html>
+```
+
+---
+
+### E-mail 验证
+下面的函数检查输入的数据是否符合电子邮件地址的基本语法。
+
+意思就是说，输入的数据必须包含 @ 符号和点号(.)。同时，@ 不可以是邮件地址的首字符，并且 @ 之后需有至少一个点号：
+```javascript
+function validate_email(field,alerttxt){
+  with (field){
+    apos=value.indexOf("@")
+    dotpos=value.lastIndexOf(".")
+    if (apos<1||dotpos-apos<2) 
+      {alert(alerttxt);return false}
+    else {return true}
+  }
+}
+```
+下面是连同 HTML 表单的完整代码：
+```html
+<html>
+<head>
+<script type="text/javascript">
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Not a valid e-mail address!")==false)
+  {email.focus();return false}
+}
+}
+</script>
+</head>
+
+<body>
+<form action="submitpage.htm"onsubmit="return validate_form(this);" method="post">
+Email: <input type="text" name="email" size="30">
+<input type="submit" value="Submit"> 
+</form>
+</body>
+
+</html>
+```
