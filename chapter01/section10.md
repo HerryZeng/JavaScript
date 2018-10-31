@@ -75,3 +75,84 @@ function myFunction(){
     return x;
 }
 ```
+上面的函数会返回值 `5`。
+注释：整个 JavaScript 并不会停止执行，仅仅是函数。JavaScript 将继续执行代码，从调用函数的地方。
+函数调用将被返回值取代：
+```javascript
+var myVar=myFunction();
+```
+myVar 变量的值是 5，也就是函数 "myFunction()" 所返回的值。
+即使不把它保存为变量，您也可以使用返回值：
+```javascript
+document.getElementById("demo").innerHTML=myFunction();
+```
+"demo" 元素的 innerHTML 将成为 `5`，也就是函数 "myFunction()" 所返回的值。
+
+您可以使返回值基于传递到函数中的参数：
+计算两个数字的乘积，并返回结果：
+```javascript
+function myFunction(a,b)
+{
+return a*b;
+}
+
+document.getElementById("demo").innerHTML=myFunction(4,3);
+```
+带有返回值的函数
+有时，我们会希望函数将值返回调用它的地方。
+
+通过使用 return 语句就可以实现。
+
+在使用 return 语句时，函数会停止执行，并返回指定的值。
+
+语法
+function myFunction()
+{
+var x=5;
+return x;
+}
+
+上面的函数会返回值 5。
+
+注释：整个 JavaScript 并不会停止执行，仅仅是函数。JavaScript 将继续执行代码，从调用函数的地方。
+
+函数调用将被返回值取代：
+
+var myVar=myFunction();
+myVar 变量的值是 5，也就是函数 "myFunction()" 所返回的值。
+
+即使不把它保存为变量，您也可以使用返回值：
+
+document.getElementById("demo").innerHTML=myFunction();
+"demo" 元素的 innerHTML 将成为 5，也就是函数 "myFunction()" 所返回的值。
+
+您可以使返回值基于传递到函数中的参数：
+
+实例
+计算两个数字的乘积，并返回结果：
+```javascript
+function myFunction(a,b)
+{
+return a*b;
+}
+
+document.getElementById("demo").innerHTML=myFunction(4,3);
+```
+"demo" 元素的 innerHTML 将是：
+```javascript
+12
+```
+在您仅仅希望退出函数时 ，也可使用 return 语句。返回值是可选的：
+```javascript
+function myFunction(a,b){
+    if (a>b)
+      {
+          return;
+      }
+    x=a+b
+}
+```
+如果 a 大于 b，则上面的代码将退出函数，并不会计算 a 和 b 的总和。
+
+---
+
