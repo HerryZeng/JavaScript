@@ -71,3 +71,22 @@ txt3=txt1+" "+txt2;
 ```
 在以上语句执行后，变量 txt3 包含的值是：`"What a very nice day"`
 
+---
+
+### 对字符串和数字进行加法运算
+
+请看这些例子：
+```javascript
+x=5+5;
+document.write(x);
+x="5"+"5";
+document.write(x);
+x=5+"5";
+document.write(x);
+x="5"+5;
+document.write(x);
+```
+规则是：
+如果把数字与字符串相加，结果将成为字符串。
+
+
