@@ -46,6 +46,7 @@ function myFunction(var1,var2){
 变量和参数必须以一致的顺序出现。第一个变量就是第一个被传递的参数的给定的值，以此类推。
 
 实例
+```html
 <button onclick="myFunction('Bill Gates','CEO')">点击这里</button>
 
 <script>
@@ -54,4 +55,4 @@ function myFunction(name,job)
 alert("Welcome " + name + ", the " + job);
 }
 </script>
-
+```
