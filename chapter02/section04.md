@@ -117,4 +117,3 @@ onmouseover 和 onmouseout 事件可用于在用户的鼠标移至 HTML 元素�
 ### onmousedown、onmouseup 以及 onclick 事件
 
 onmousedown, onmouseup 以及 onclick 构成了鼠标点击事件的所有部分。首先当点击鼠标按钮时，会触发 onmousedown 事件，当释放鼠标按钮时，会触发 onmouseup 事件，最后，当完成鼠标点击时，会触发 onclick 事件。
-
