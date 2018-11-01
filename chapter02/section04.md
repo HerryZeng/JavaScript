@@ -45,3 +45,46 @@ id.innerHTML="谢谢!";
 </body>
 </html>
 ```
+
+---
+
+### HTML 事件属性
+如需向 `HTML`元素分配事件，您可以使用事件属性。
+
+实例
+向 `button`元素分配 `onclick`事件：
+```html
+<button onclick="displayDate()">点击这里</button>
+```
+在上面的例子中，名为 displayDate 的函数将在按钮被点击时执行。
+
+---
+
+### 使用 HTML DOM 来分配事件
+HTML DOM 允许您通过使用 JavaScript 来向 HTML 元素分配事件：
+
+实例
+向 button 元素分配 onclick 事件：
+```javascript
+<script>
+document.getElementById("myBtn").onclick=function(){displayDate()};
+</script>
+
+```
+在上面的例子中，名为 displayDate 的函数被分配给 id=myButn" 的 HTML 元素。
+
+当按钮被点击时，会执行该函数。
+
+---
+
+### onload 和 onunload 事件
+onload 和 onunload 事件会在用户进入或离开页面时被触发。
+
+onload 事件可用于检测访问者的浏览器类型和浏览器版本，并基于这些信息来加载网页的正确版本。
+
+onload 和 onunload 事件可用于处理 cookie。
+
+实例
+```html
+<body onload="checkCookies()">
+```
