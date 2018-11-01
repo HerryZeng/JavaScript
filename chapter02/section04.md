@@ -27,3 +27,21 @@ HTML 事件的例子：
 ```javascript
 <h1 onclick="this.innerHTML='谢谢!'">请点击该文本</h1>
 ```
+例子 2
+本例从事件处理器调用一个函数：
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function changetext(id)
+{
+id.innerHTML="谢谢!";
+}
+</script>
+</head>
+<body>
+<h1 onclick="changetext(this)">请点击该文本</h1>
+</body>
+</html>
+```
