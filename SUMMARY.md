@@ -1,4 +1,4 @@
-# 目录
+# Summary
 
 * [介绍](README.md)
 * [第一章：JS教程](chapter1.md)
@@ -51,6 +51,6 @@
   * [第三节：JS Prototype](chapter05/section03.md)
 * [第六章：参考手册](chapter06.md)
   * [第一节：JavaScript对象](chapter06/section01.md)
-  * [第二节：HTML DOM对象](chapter05/section02.md)
+  * [第二节：HTML DOM对象](chapter06/section02.md)
 * [第七章：JS高级教程](chapter07.md)
 
